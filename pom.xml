@@ -16,9 +16,14 @@
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<systemPropertyVariables>
+						<!--	To run pom.xml as maven test from eclipse.
+					<browser>chrome</browser>
+						<isLambdaTest>true</isLambdaTest>
+						<isHeadLess>false</isHeadLess> -->
+						<!-- From cmd prompt -->
 						<browser>${browser}</browser>
-						<isLambdaTest>${isLambdaTest}</isLambdaTest>
-						<isHeadLess>${isHeadLess}</isHeadLess>
+						<isLambdaTest>${isHeadLess}</isLambdaTest>
+						<isHeadLess>${isLambdaTest}</isHeadLess>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

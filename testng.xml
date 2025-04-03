@@ -3,9 +3,9 @@
 <suite name="Automation Practice Test Suite"  parallel="methods" thread-count="4" >
   <test  name="UI Automation Test">
 	  <!-- for reading parameter values from pom.xml surefire plugin -->
-	  <parameter name="browser" value="${browser}"/>
-	  <parameter name="isHeadLess" value="${isHeadLess}"/>
-	  <parameter name="isLambdaTest" value="${isLambdaTest}"/>
+	  <parameter name="browser"  value="${browser}"/>
+	  <parameter name="isHeadLess" value="${isHeadLess}"/> 
+	  <parameter name="isLambdaTest" value="${isLambdaTest}"/> 
 	  
     <classes>
       <class name="com.ui.test.DataProviderForLoginTest">

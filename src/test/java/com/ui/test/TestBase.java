@@ -32,7 +32,7 @@ public class TestBase {
 		this.isLambdaTest = isLambdaTest;
 		WebDriver lambdaDriver;
 		if (isLambdaTest) {
-			lambdaDriver = LambdaTestUtility.initializeLambdaTestSession("chrome", result.getMethod().getMethodName());
+			lambdaDriver = LambdaTestUtility.initializeLambdaTestSession(browser, result.getMethod().getMethodName());
 			homePage = new HomePage(lambdaDriver);
 		} else {
 			// runnimg on local machine
