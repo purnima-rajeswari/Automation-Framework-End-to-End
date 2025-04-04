@@ -128,7 +128,7 @@ public abstract class BrowserUtility {
 		String timeStamp=format.format(date);
 		TakesScreenshot screenshot = (TakesScreenshot) driver.get();
 		
-		String path= System.getProperty("user.dir") + "//Screenshots//" + name+" -" + timeStamp +".png";
+		String path=  "./Screenshots/" + name+" -" + timeStamp +".png";
 		File screenShotData = screenshot.getScreenshotAs(OutputType.FILE);
 		File screenshotFile = new File(path);
 		try {
