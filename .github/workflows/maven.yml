@@ -6,15 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Test Automation WorkFlow
 
-on:
- schedule:
- - cron: 30 21 * * *
- push:
-    branches: [ "master" ]
- pull_request:
-    branches: [ "master" ]
 
 jobs:
   build:
